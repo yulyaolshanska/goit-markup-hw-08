@@ -1,0 +1,25 @@
+/* Акцент #2196F3 */
+/* Основной цвет текста #757575 */
+/* Вторичный цвет текста #212121 */
+
+/* Основной цвет фона #FFFFFF */
+/* Вторичный цвет фота #F5F4FA */
+/* Темный цвет фона #2F303A */
+/* Border для карточек #EEEEEE */
+/* Цвет иконок #AFB1B8 */
+/* Второй шрифт 'Raleway'    */
+/* Цвет кнопки при hover и focus #188ce8 */
+:root {
+  --accent-color: #2196f3;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --white-text-color: #ffffff;
+  --white-bcg-color: #ffffff;
+  --secondary-bcg-color: #f5f4fa;
+  --dark-bcg-color: #2f303a;
+  --card-border: #eeeeee;
+  --icon-color: #afb1b8;
+  --hover-btn-color: #188ce8;
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

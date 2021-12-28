@@ -1,0 +1,35 @@
+.features {
+  display: flex;
+}
+
+.features__item {
+  max-width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 120px;
+
+  background-color: var(--secondary-bcg-color);
+  border-radius: 4px;
+}
+
+.features__icon {
+  height: 70px;
+  width: 70px;
+}
+.features__title {
+  @extend %title;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.14;
+}
