@@ -1,5 +1,9 @@
 .footer__contacts {
-  margin-right: 70px;
+  text-align: center;
+  @media screen and (max-width:767px) {
+
+  margin-bottom: 60px;}
+  // margin-right: 70px;
 }
 
 .footer__logo {
@@ -8,9 +12,13 @@
 
   color: var(--white-text-color);
 }
+
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
+// .address__item:not(:last-child) {
+//   margin-bottom: 9px;
+// }
 .address {
   font-style: normal;
 }

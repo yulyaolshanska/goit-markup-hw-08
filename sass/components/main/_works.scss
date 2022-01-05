@@ -1,5 +1,10 @@
 .works {
-  display: flex;
+  // display: flex;
+}
+.works__section {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .works__item {

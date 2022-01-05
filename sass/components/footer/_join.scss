@@ -1,3 +1,10 @@
+.join {
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
 .join__text {
   margin-bottom: 20px;
 
@@ -12,6 +19,8 @@
 
 .join__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .join__item:not(:last-child) {

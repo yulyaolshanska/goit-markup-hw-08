@@ -1,9 +1,10 @@
 .hero {
-  max-width: 1600px;
+  // max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 0;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
   text-align: center;
 
   background-color: var(--dark-bcg-color);
@@ -11,6 +12,11 @@
     url('../images/hero-img.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
 }
 .hero__title {
   margin-bottom: 30px;
@@ -18,8 +24,10 @@
 
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
+  // font-size: 44px;
+  // line-height: 1.36;
   letter-spacing: 0.06em;
 
   color: var(--white-text-color);
