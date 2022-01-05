@@ -1,20 +1,20 @@
 .header__container,
 .site-nav {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 .nav {
-  display: flex;
+  // display: flex;
 }
 .nav__item:not(:last-child) {
-  margin-right: 50px;
+  // margin-right: 50px;
 }
 
 .nav__link {
-  display: block;
+  // display: block;
   max-height: 80px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   font-weight: 500;
   text-decoration: none;
@@ -34,7 +34,7 @@
     position: relative;
   }
   &--current::after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     bottom: 0;
