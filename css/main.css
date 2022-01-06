@@ -272,10 +272,12 @@ button {
   bottom: 0;
   right: 0;
   left: 0;
+  padding: 93px 15px;
   z-index: 2;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 250ms var(--timing-function), visibility 350ms var(--timing-function);
@@ -289,13 +291,7 @@ button {
 }
 
 .modal {
-  position: absolute;
-  width: 528px;
-  /* height: 581px; */
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  position: relative;
   -webkit-transition: -webkit-transform 250ms var(--timing-function);
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
@@ -353,7 +349,7 @@ button {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: var(--secondary-text-color);
 }
 
@@ -436,7 +432,7 @@ button {
 
 .comment__label {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
@@ -491,7 +487,7 @@ button {
 }
 
 .policy {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .policy__field {
