@@ -26,7 +26,11 @@
   height: 50px;
   padding: 15px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: $tablet-only) {
     margin-bottom: 20px;
   }
 

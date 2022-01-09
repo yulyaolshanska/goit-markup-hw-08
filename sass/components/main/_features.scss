@@ -1,13 +1,16 @@
 .features {
-  //   display: flex;
+  @extend %flex-cards-box;
 }
 
 .features__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $mobile-only) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
+
+  @extend %flex-cards;
+
   //   max-width: 270px;
 
   //   &:not(:last-child) {

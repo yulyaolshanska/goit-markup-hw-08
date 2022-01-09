@@ -16,6 +16,10 @@
       display: block;
     }
   }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
 .menu__btn {
   display: flex;
@@ -53,6 +57,10 @@
     position: absolute;
     left: 40px;
     bottom: 48px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 84px;
   }
 }
 .contacts-menu__social {

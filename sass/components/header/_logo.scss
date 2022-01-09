@@ -14,4 +14,8 @@
   &--accent {
     color: var(--accent-color);
   }
+  @media screen and (max-width: $tablet-only) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }

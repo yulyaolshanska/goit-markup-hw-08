@@ -9,12 +9,15 @@
   margin-bottom: 20px;
 
   font-weight: bold;
-  font-size: 14px;
+
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--white-text-color);
+
+  @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
+    margin-top: 5px;
+  }
 }
 
 .join__list {

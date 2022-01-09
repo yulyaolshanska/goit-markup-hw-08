@@ -6,7 +6,7 @@
   left: 0;
 
   padding: 93px 15px;
-  z-index: 2;
+  z-index: 30;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.2);
 
@@ -23,12 +23,6 @@
 }
 
 .modal {
-  // position: absolute;
-  // width: 528px;
-  // /* height: 581px; */
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, -50%) scale(1);
   position: relative;
   transition: transform 250ms var(--timing-function);
   padding: 40px;
@@ -36,6 +30,16 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  // width: 528px;
+  // /* height: 581px; */
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 
   .backdrop--is-hidden & {
     transform: translate(-50%, -50%) scale(0.8);
@@ -216,7 +220,7 @@
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
 
   border: 1px solid var(--secondary-text-color);
   border-radius: 4px;
@@ -237,13 +241,24 @@
 }
 .policy__label {
   display: inline-block;
-  margin-right: 5px;
+  // margin-right: 5px;
+
+  @media screen and (max-width: $tablet-only) {
+    font-size: 12px;
+    line-height: 1.17;
+    margin-right: 3px;
+  }
 }
 .policy__link {
   display: inline-block;
   color: var(--accent-color);
   /* делает подчеркивание сплошным */
   text-decoration-skip-ink: none;
+
+  @media screen and (max-width: $tablet-only) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 .form__btn {
   margin-left: auto;

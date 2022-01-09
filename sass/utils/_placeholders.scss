@@ -6,3 +6,17 @@
   font-size: 16px;
   color: var(--primary-text-color);
 }
+
+%flex-cards-box {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+%flex-cards {
+  @media screen and (min-width: $tablet) {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}

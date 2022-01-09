@@ -7,3 +7,11 @@
   // display: flex;
   // align-items: baseline;
 }
+
+.footer__tablet-box {
+  @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}

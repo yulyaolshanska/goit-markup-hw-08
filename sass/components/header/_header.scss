@@ -3,5 +3,11 @@
   border-bottom: 1px solid #ececec;
 }
 .header__container {
-  position: relative;
+  @media screen and (max-width: $mobile-only) {
+    position: relative;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

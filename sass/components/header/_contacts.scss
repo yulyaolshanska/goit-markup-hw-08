@@ -1,9 +1,11 @@
 .contacts {
-  display: flex;
-
   @media screen and (max-width: $mobile-only) {
     flex-direction: column-reverse;
     margin-bottom: 64px;
+  }
+  @media screen and (min-width: $tablet) {
+    display: block;
+    margin-left: auto;
   }
   // margin-left: auto;
 }
