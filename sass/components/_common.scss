@@ -35,13 +35,15 @@
 .section__title {
   @extend %title;
   margin-bottom: 30px;
-
   font-size: 28px;
   line-height: 1.18;
-  // font-size: 36px;
-  // line-height: 1.16;
-  // margin-bottom: 50px;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 
   &--is-hidden {
     position: absolute;

@@ -2,22 +2,24 @@
   padding-top: 24px;
   padding-bottom: 25px;
 
-   @media screen and (min-width: $desktop){  margin-right: 93px;
-}
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 .logo {
   color: var(--secondary-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+
   text-decoration: none;
 
   &--accent {
     color: var(--accent-color);
   }
-  @media screen and (max-width: $tablet-only) {
-    font-size: 24px;
-    line-height: 1.17;
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
