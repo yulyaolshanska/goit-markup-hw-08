@@ -1,5 +1,8 @@
 .subscribe {
   text-align: center;
+  @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
+    margin-top: 60px;
+  }
   // margin-left: auto;
 }
 .subscribe__text {

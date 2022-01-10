@@ -186,17 +186,6 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
 .header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -222,22 +211,27 @@ button {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header__container,
-  .site-nav {
-    position: relative;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .header__container,
-  .site-nav {
+  .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    position: relative;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    margin-left: auto;
   }
 }
 
@@ -272,20 +266,20 @@ button {
   transition: color 250ms var(--timing-function);
 }
 
-@media screen and (max-width: 767px) {
-  .nav .nav__link {
-    font-size: 40px;
-    line-height: 1.17;
-  }
+.nav .nav__link--current {
+  color: var(--accent-color);
+  position: relative;
 }
 
 .nav .nav__link:hover, .nav .nav__link:focus {
   color: var(--accent-color);
 }
 
-.nav .nav__link--current {
-  color: var(--accent-color);
-  position: relative;
+@media screen and (max-width: 767px) {
+  .nav .nav__link {
+    font-size: 40px;
+    line-height: 1.17;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -308,6 +302,9 @@ button {
 
 @media screen and (max-width: 767px) {
   .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -316,22 +313,32 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .contacts {
-    display: block;
-    margin-left: auto;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
 .contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   letter-spacing: 0.02em;
   font-weight: 500;
   text-decoration: none;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--primary-text-color);
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .contacts__link:hover, .contacts__link:focus {
@@ -372,6 +379,22 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__icon--mail {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__icon--phone {
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
@@ -381,6 +404,7 @@ button {
     left: 0;
     padding: 48px 40px;
     width: 100%;
+    min-height: 517px;
     height: 100vh;
     background-color: var(--white-bcg-color);
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -399,6 +423,9 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
   }
 }
 
@@ -449,7 +476,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .contacts-menu {
-    margin-left: 84px;
+    margin-left: auto;
   }
 }
 
@@ -1079,13 +1106,14 @@ button {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer__tablet-box {
+  .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin-bottom: 60px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1203,6 +1231,12 @@ button {
 
 .subscribe {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe {
+    margin-top: 60px;
+  }
 }
 
 .subscribe__text {
