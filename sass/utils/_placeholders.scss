@@ -8,14 +8,13 @@
 }
 
 %flex-cards-box {
-  @media screen and (min-width: $tablet) {
-    display: flex;
+  @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
     flex-wrap: wrap;
     margin: -15px;
   }
 }
 %flex-cards {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
     margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
   }

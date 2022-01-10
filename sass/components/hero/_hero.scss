@@ -1,10 +1,8 @@
 .hero {
-  // max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 118px 0;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
+
   text-align: center;
 
   background-color: var(--dark-bcg-color);
@@ -14,12 +12,17 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile) and (max-width: $mobile-only) {
     width: $mobile;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
     width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .hero__title {

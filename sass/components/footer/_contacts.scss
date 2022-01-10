@@ -1,9 +1,13 @@
 .footer__contacts {
-  text-align: center;
-  @media screen and (max-width:767px) {
-
-  margin-bottom: 60px;}
-  // margin-right: 70px;
+  @media screen and (max-width: $mobile-only) {
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: $tablet-only) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 }
 
 .footer__logo {
@@ -15,10 +19,12 @@
 
 .address__item:not(:last-child) {
   margin-bottom: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
-// .address__item:not(:last-child) {
-//   margin-bottom: 9px;
-// }
+
 .address {
   font-style: normal;
 }

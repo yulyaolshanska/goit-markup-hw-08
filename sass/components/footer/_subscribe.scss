@@ -1,9 +1,13 @@
 .subscribe {
-  text-align: center;
   @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
     margin-top: 60px;
   }
-  // margin-left: auto;
+  @media screen and (max-width: $tablet-only) {
+    text-align: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+  }
 }
 .subscribe__text {
   display: block;
@@ -19,13 +23,14 @@
 }
 
 .subscribe__form {
-  // display: flex;
-  // justify-content: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .subscribe__input {
   width: 100%;
-  // width: 358px;
   height: 50px;
   padding: 15px;
 
@@ -36,7 +41,9 @@
   @media screen and (max-width: $tablet-only) {
     margin-bottom: 20px;
   }
-
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+  }
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
@@ -55,7 +62,9 @@
 }
 
 .subscribe__btn {
-  // margin-left: 12px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
 }
 
 .btn__icon {

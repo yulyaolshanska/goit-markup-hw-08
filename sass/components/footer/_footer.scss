@@ -9,8 +9,10 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  // display: flex;
-  // align-items: baseline;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 // .footer__tablet-box {

@@ -11,17 +11,22 @@
   @media screen and (min-width: $tablet) {
     width: $tablet;
   }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
-  // &--no-indent {
-  //   padding-bottom: 0px;
-  // }
+    &--no-indent {
+      padding-bottom: 0px;
+    }
+  }
 
   &--other-bcg {
     background-color: var(--secondary-bcg-color);

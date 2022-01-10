@@ -1,5 +1,8 @@
 .team {
   @extend %flex-cards-box;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .team__item {
@@ -14,10 +17,15 @@
     }
   }
   @extend %flex-cards;
+  @media screen and (max-width: $tablet-only) {
+    margin: 15px;
+  }
 
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .team__info {

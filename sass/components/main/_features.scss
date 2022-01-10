@@ -1,5 +1,8 @@
 .features {
   @extend %flex-cards-box;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .features__item {
@@ -11,11 +14,13 @@
 
   @extend %flex-cards;
 
-  //   max-width: 270px;
+  @media screen and (min-width: $desktop) {
+    max-width: 270px;
 
-  //   &:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .features__icon-box {
@@ -35,9 +40,12 @@
 }
 .features__title {
   @extend %title;
+
   margin-bottom: 10px;
-  text-align: center;
-  // text-align: left;
+  @media screen and (max-width: $mobile-only) {
+    text-align: center;
+  }
+
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.14;

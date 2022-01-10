@@ -1,7 +1,9 @@
 .header__logo {
-  // margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
+
+   @media screen and (min-width: $desktop){  margin-right: 93px;
+}
 }
 .logo {
   color: var(--secondary-text-color);

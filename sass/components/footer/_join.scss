@@ -1,8 +1,9 @@
 .join {
-  text-align: center;
-
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $mobile-only) {
     margin-bottom: 60px;
+  }
+  @media screen and (max-width: $tablet-only) {
+    text-align: center;
   }
 }
 .join__text {
