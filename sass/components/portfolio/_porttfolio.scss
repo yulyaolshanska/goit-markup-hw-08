@@ -9,6 +9,11 @@
 
 .portfolio__item {
   @extend %flex-cards;
+  display: flex;
+
+  @media screen and (max-width: $mobile-only) {
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: $desktop) {
     width: calc((100% - 60px) / 3);
 
@@ -22,7 +27,8 @@
 }
 
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
 
   transition: box-shadow 250ms var(--timing-function);
@@ -39,6 +45,7 @@
   border-right: 1px solid var(--card-border);
   border-bottom: 1px solid var(--card-border);
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .portfolio__title {

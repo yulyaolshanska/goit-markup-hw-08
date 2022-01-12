@@ -276,6 +276,12 @@ button {
   }
 }
 
+@media (max-height: 517px) {
+  .nav .nav__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .nav .nav__item:not(:last-child) {
     margin-right: 50px;
@@ -306,6 +312,12 @@ button {
   .nav .nav__link {
     font-size: 40px;
     line-height: 1.17;
+  }
+}
+
+@media (max-height: 517px) and (max-width: 767px) {
+  .nav .nav__link {
+    font-size: 30px;
   }
 }
 
@@ -346,6 +358,18 @@ button {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__item {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-height: 517px) and (max-width: 767px) {
+  .contacts__item {
+    margin-bottom: 20px;
   }
 }
 
@@ -412,10 +436,15 @@ button {
 
 @media screen and (max-width: 767px) {
   .contacts__link-phone {
-    margin-bottom: 32px;
     font-size: 34px;
     line-height: 1.18;
     color: var(--accent-color);
+  }
+}
+
+@media screen and (max-height: 517px) and (max-width: 767px) {
+  .contacts__link-phone {
+    font-size: 24px;
   }
 }
 
@@ -462,14 +491,22 @@ button {
     left: 0;
     padding: 48px 40px;
     width: 100%;
-    min-height: 517px;
     height: 100vh;
     background-color: var(--white-bcg-color);
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
   .menu--is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -521,14 +558,6 @@ button {
   }
   .menu__btn--is-open .menu__burger-btn {
     display: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .contacts-menu {
-    position: absolute;
-    left: 40px;
-    bottom: 48px;
   }
 }
 
@@ -669,6 +698,14 @@ button {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-height: 580px) {
+  .modal {
+    position: absolute;
+    top: 75%;
+    left: 50%;
   }
 }
 
@@ -1503,7 +1540,7 @@ button {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1515,6 +1552,12 @@ button {
 @media screen and (min-width: 1200px) {
   .filter {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter__item {
+    margin-bottom: 15px;
   }
 }
 
@@ -1560,6 +1603,18 @@ button {
   }
 }
 
+.portfolio__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     width: calc((100% - 60px) / 3);
@@ -1573,7 +1628,13 @@ button {
 }
 
 .portfolio__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-decoration: none;
   -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: -webkit-box-shadow 250ms var(--timing-function);
@@ -1591,6 +1652,9 @@ button {
   border-right: 1px solid var(--card-border);
   border-bottom: 1px solid var(--card-border);
   padding: 20px 24px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .portfolio__title {
@@ -1634,8 +1698,8 @@ button {
   line-height: 1.56;
   color: var(--white-text-color);
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms var(--timing-function);
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);

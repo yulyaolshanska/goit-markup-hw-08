@@ -9,6 +9,14 @@
     margin-left: auto;
   }
 }
+.contacts__item {
+  @media screen and (max-width: $mobile-only) {
+    margin-bottom: 32px;
+  }
+  @media screen and (max-height: 517px) and (max-width: $mobile-only) {
+    margin-bottom: 20px;
+  }
+}
 
 .contacts__item:not(:last-child) {
   @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
@@ -59,10 +67,12 @@
 }
 .contacts__link-phone {
   @media screen and (max-width: $mobile-only) {
-    margin-bottom: 32px;
     font-size: 34px;
     line-height: 1.18;
     color: var(--accent-color);
+  }
+  @media screen and (max-height: 517px) and (max-width: $mobile-only) {
+    font-size: 24px;
   }
 }
 .contacts__icon {

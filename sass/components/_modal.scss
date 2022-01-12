@@ -38,6 +38,11 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
+  @media screen and (min-width: $tablet) and (max-height: 580px) {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+  }
   @media screen and (min-width: $desktop) {
     width: 528px;
     height: 581px;

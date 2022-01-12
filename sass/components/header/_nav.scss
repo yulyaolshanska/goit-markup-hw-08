@@ -23,6 +23,9 @@
     @media screen and (max-width: $mobile-only) {
       margin-bottom: 32px;
     }
+    @media (max-height: 517px) {
+      margin-bottom: 20px;
+    }
     @media screen and (min-width: $tablet) {
       margin-right: 50px;
     }
@@ -52,6 +55,9 @@
     @media screen and (max-width: $mobile-only) {
       font-size: 40px;
       line-height: 1.17;
+    }
+    @media (max-height: 517px) and (max-width: $mobile-only) {
+      font-size: 30px;
     }
     @media screen and (min-width: $tablet) {
       display: block;
