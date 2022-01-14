@@ -1,9 +1,13 @@
 .header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 16px 0;
 
   @media screen and (min-width: $desktop) {
+    padding: 26px 0;
+  }
+  @media screen and (min-width: $desktop) {
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 .logo {

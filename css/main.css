@@ -208,13 +208,20 @@ button {
 }
 
 .header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 16px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding: 26px 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -256,12 +263,6 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .site-nav {
-    margin-left: auto;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .nav {
     display: -webkit-box;
@@ -273,12 +274,6 @@ button {
 @media screen and (max-width: 767px) {
   .nav .nav__item:not(:last-child) {
     margin-bottom: 32px;
-  }
-}
-
-@media (max-height: 517px) {
-  .nav .nav__item:not(:last-child) {
-    margin-bottom: 20px;
   }
 }
 
@@ -521,6 +516,13 @@ button {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    margin-left: 0px;
   }
 }
 
@@ -645,18 +647,6 @@ button {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .hero {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero {
-    width: 768px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
@@ -694,7 +684,7 @@ button {
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 93px 15px;
+  padding: 63px 15px;
   z-index: 30;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -1075,6 +1065,7 @@ button {
 }
 
 .features__title {
+  font-size: 14px;
   margin-bottom: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1150,7 +1141,7 @@ button {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
     margin: 15px;
   }
@@ -1249,7 +1240,7 @@ button {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .customers {
     margin: -15px;
   }
@@ -1331,6 +1322,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -ms-flex-wrap: wrap;
@@ -1425,12 +1419,6 @@ button {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-text-color);
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .join__text {
-    margin-top: 5px;
-  }
 }
 
 .join__list {
@@ -1570,17 +1558,17 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .filter {
     margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1593,6 +1581,9 @@ button {
 @media screen and (max-width: 767px) {
   .filter__item {
     margin-bottom: 15px;
+  }
+  .filter__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 }
 
@@ -1645,7 +1636,7 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .portfolio__item {
+  .portfolio__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }

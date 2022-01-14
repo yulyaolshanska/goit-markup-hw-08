@@ -1,11 +1,12 @@
 .filter {
   display: flex;
-  justify-content: center;
+
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
+    justify-content: center;
   }
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
@@ -15,6 +16,10 @@
 .filter__item {
   @media screen and (max-width: $mobile-only) {
     margin-bottom: 15px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 }
 .filter__item:not(:last-child) {

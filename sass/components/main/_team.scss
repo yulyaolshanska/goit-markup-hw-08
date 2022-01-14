@@ -17,7 +17,7 @@
     }
   }
   @extend %flex-cards;
-  @media screen and (max-width: $tablet-only) {
+  @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
     margin: 15px;
   }
 

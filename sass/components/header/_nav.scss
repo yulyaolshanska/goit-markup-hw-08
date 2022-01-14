@@ -10,9 +10,9 @@
     position: relative;
     margin-bottom: 32px;
   }
-  @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
-    margin-left: auto;
-  }
+  // @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
+  //   margin-left: auto;
+  // }
 }
 .nav {
   @media screen and (min-width: $tablet) {
@@ -23,9 +23,9 @@
     @media screen and (max-width: $mobile-only) {
       margin-bottom: 32px;
     }
-    @media (max-height: 517px) {
-      margin-bottom: 20px;
-    }
+    // @media (max-height: 517px) {
+    //   margin-bottom: 20px;
+    // }
     @media screen and (min-width: $tablet) {
       margin-right: 50px;
     }

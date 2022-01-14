@@ -6,6 +6,7 @@
 .footer {
   @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
     display: flex;
+    align-items: baseline;
     justify-content: space-around;
     flex-wrap: wrap;
   }

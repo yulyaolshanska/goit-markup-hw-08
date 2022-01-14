@@ -39,13 +39,13 @@
     }
   }
 
-  @media screen and (min-width: $mobile) and (max-width: $mobile-only) {
-    width: $mobile;
-  }
+  // @media screen and (min-width: $mobile) and (max-width: $mobile-only) {
+  //   width: $mobile;
+  // }
 
-  @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
-    width: $tablet;
-  }
+  // @media screen and (min-width: $tablet) and (max-width: $tablet-only) {
+  //   width: $tablet;
+  // }
   @media screen and (min-width: $desktop) {
     max-width: 1600px;
     padding-top: 200px;
