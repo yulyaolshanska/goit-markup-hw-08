@@ -1,7 +1,8 @@
 .contacts {
   @media screen and (max-width: $mobile-only) {
-    display: flex;
-    flex-direction: column-reverse;
+    @include custom-flex-center($direction: column-reverse, $align: flex-start);
+    // display: flex;
+    // flex-direction: column-reverse;
     margin-bottom: 64px;
   }
   @media screen and (min-width: $desktop) {

@@ -58,9 +58,10 @@
 }
 
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    @include custom-flex-center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   text-align: center;
   width: 200px;
   height: 50px;

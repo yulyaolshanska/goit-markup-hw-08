@@ -1,0 +1,8 @@
+@mixin custom-flex-center($justify: center, $align: center, $direction: row, $wrap: wrap) {
+  // You can write own flex styles
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}

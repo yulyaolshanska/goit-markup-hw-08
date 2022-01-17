@@ -24,9 +24,10 @@
 }
 
 .features__icon-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    @include custom-flex-center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   margin-bottom: 30px;
   height: 120px;
 

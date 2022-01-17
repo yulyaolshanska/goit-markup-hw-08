@@ -1,8 +1,9 @@
 .customers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  @include custom-flex-center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-wrap: wrap;
   @media screen and (max-width: $tablet-only) {
     margin: -15px;
   }
@@ -32,9 +33,10 @@
 }
 
 .customers__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include custom-flex-center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   width: 100%;
   height: 100%;
 
